@@ -1,4 +1,4 @@
-## Problem solving comparison for [910 A](https://codeforces.com/contest/910/problem/A) using Greedy and DP  
+# Problem solving comparison for [910 A](https://codeforces.com/contest/910/problem/A) using Greedy and DP  
 This repo will solve the Codeforces problem [The Way to Home](https://codeforces.com/problemset/problem/910/A) using Greedy and Dynamic Programming. We will compare both solutions to see which one is more optimal.
 
 ### Team Member
