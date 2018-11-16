@@ -17,4 +17,4 @@ This repo will solve the Codeforces problem [The Way to Home](https://codeforces
 **Problem explanation**  
 A frog is trying to reach home from point 1 to *n*. The frog can jump on *d* distance, on points that has lilies on it. There are always lilies somewhere in point 1 to *n*.
 
-The problem needs us to find the minimum amount of jumps she needs to do in order to get home from point 1. If th
+The problem needs us to find the minimum amount of jumps she needs to do in order to get home from point 1. If the next lily point less than jump distance, print -1.
