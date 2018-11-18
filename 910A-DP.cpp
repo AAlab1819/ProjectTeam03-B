@@ -5,12 +5,12 @@ typedef long long int ll;
 
 int main()
 {
-	ll goal,maxleap;
+	ll goal,maxleap; 
 	cin>>goal>>maxleap;
-	string track;
+	string track; 
 	cin>>track;
-	int dp[99];
-	for (int i = 0; i<99; i++)
+	int dp[101];
+	for (int i = 0; i<101; i++)
 	{
 		dp[i] = 10000000;
 	}
@@ -30,4 +30,5 @@ int main()
 	else{
         cout<<-1<<endl;
 	}
+	return 0;
 }
