@@ -10,11 +10,19 @@ This repo will solve the Codeforces problem [The Way to Home](https://codeforces
 ### Language
 - C++ 11
 
-### Instructions
-1. Compile the source code from from this repository and execute the program.
-
-## Problem and Input/Output
-**Problem explanation**  
+## Problem explanation  
 A frog is trying to reach home from point 1 to *n*. The frog can jump on *d* distance, on points that has lilies on it. There are always lilies somewhere in point 1 to *n*.
 
-The problem needs us to find the minimum amount of jumps she needs to do in order to get home from point 1. If the next lily point less than jump distance, print -1.
+The problem needs us to find the minimum amount of jumps she needs to do in order to get home from point 1. If the next lily point is less than the jump distance, print -1.
+
+## Input/Output**
+**Sample #1**
+Input:
+```
+8 4
+10010101
+```
+Output:
+```
+2
+```
