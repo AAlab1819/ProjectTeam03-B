@@ -15,7 +15,7 @@ A frog is trying to reach home from point 1 to *n*. The frog can jump on *d* dis
 
 The problem needs us to find the minimum amount of jumps she needs to do in order to get home from point 1. If the next lily point is less than the jump distance, print -1.
 
-## Input/Output**
+## Input/Output
 **Sample #1**
 Input:
 ```
@@ -25,4 +25,16 @@ Input:
 Output:
 ```
 2
+```
+
+---
+**Sample #2**
+Input:
+```
+4 2
+1001
+```
+Output:
+```
+-1
 ```
