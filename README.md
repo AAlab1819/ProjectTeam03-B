@@ -61,13 +61,14 @@ A while loop to repeat the algorithm until we reach the goal. Inside the while l
 ```
 a for loop that finds the farthest lily flower the frog can step on, not from 1, but from the max jump distance point to find the lily flower quicker.
 ```
+            |
             v start from this zero, and go backwards from there
 1  0  0  1  0  1  0  1
-           i/j
-         j
-      <---- goes to that direction (left)
-            instead of checking the farthest lily flower from the beginning 1, it starts from the middle (i/j)  
-            and finds the first 1 it encounters
+           i/j          is the max distance the frog can jump from starting 1
+         j              walks back one step from the i/j
+         <---- goes to that direction (left)
+               instead of checking the farthest lily flower from the beginning 1, it starts from the  
+               middle (i/j) and finds the first 1 it encounters
 ```
 
 Complexity: Worst Case: O(nd)
