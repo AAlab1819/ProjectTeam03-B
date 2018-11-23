@@ -10,7 +10,7 @@ This repo will solve the Codeforces problem [The Way to Home](https://codeforces
 ### Language
 - C++ 14
 
-## Problem summary 
+## Problem Summary 
 A frog is trying to reach home from point 1 to *n*. The frog can jump on *d* distance, on points that has lilies on it. There are always lilies somewhere in point 1 to *n*.
 
 The problem needs us to find the minimum amount of jumps she needs to do in order to get home from point 1. If the next lily point is less than the jump distance, print -1.
@@ -44,4 +44,9 @@ In the first example the from can reach home in two jumps: the first jump from t
 
 In the second example the frog can not reach home, because to make it she need to jump on a distance three, but the maximum length of her jump equals to two.
 
-## Analysis
+## Analysis  
+#### Greedy Solution:  
+The greedy way of this problem 
+
+
+#### Dynamic Programming Solution:
