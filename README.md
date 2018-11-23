@@ -48,7 +48,28 @@ In the second example the frog can not reach home, because to make it she need t
 #### Greedy Solution:  
 The greedy way of this problem starts by first checking the maxleap and then look back and see where is the closest stepping stone. Set that closest stepping stone as the current standing point. Repeat by checking from the maxleap and jump to the first stepping stone that we meet (which means the farthest stone from our current standing point).
 
+```
+while(i<goal-1){
+```
+A while loop to repeat the algorithm until we reach the goal. Inside the while loop, we have
+```
+ for(j=i; j>i-maxleap; j--){
+            if (track[j] == '1'){
+                    break;
+            }
+        }
+```
+a for loop that finds the farthest lily flower the frog can step on, not from 1, but from the max jump distance point to find the lily flower quicker.
+```
+            v start from this zero, and go backwards from there
+1  0  0  1  0  1  0  1
+           i/j
+         j
+      <---- goes to that direction (left)
+            instead of checking the farthest lily flower from the beginning 1, it starts from the middle (i/j) and finds the first 1  e             encounters
+```
+
 Complexity: Worst Case: O(nd)
 
-#### Dynamic Programming Solution:
+#### Dynamic Programming Solution:  
 
