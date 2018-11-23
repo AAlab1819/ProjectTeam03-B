@@ -46,7 +46,9 @@ In the second example the frog can not reach home, because to make it she need t
 
 ## Analysis  
 #### Greedy Solution:  
-The greedy way of this problem 
+The greedy way of this problem starts by first checking the maxleap and then look back and see where is the closest stepping stone. Set that closest stepping stone as the current standing point. Repeat by checking from the maxleap and jump to the first stepping stone that we meet (which means the farthest stone from our current standing point).
 
+Complexity: Worst Case: O(nd)
 
 #### Dynamic Programming Solution:
+
