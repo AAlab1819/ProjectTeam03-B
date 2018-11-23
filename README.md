@@ -66,7 +66,8 @@ a for loop that finds the farthest lily flower the frog can step on, not from 1,
            i/j
          j
       <---- goes to that direction (left)
-            instead of checking the farthest lily flower from the beginning 1, it starts from the middle (i/j) and finds the first 1  e             encounters
+            instead of checking the farthest lily flower from the beginning 1, it starts from the middle (i/j)  
+            and finds the first 1 it encounters
 ```
 
 Complexity: Worst Case: O(nd)
