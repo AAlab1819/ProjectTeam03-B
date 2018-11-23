@@ -8,7 +8,7 @@ This repo will solve the Codeforces problem [The Way to Home](https://codeforces
 - Klemens Wiyanto
 
 ### Language
-- C++ 11
+- C++ 14
 
 ## Problem summary 
 A frog is trying to reach home from point 1 to *n*. The frog can jump on *d* distance, on points that has lilies on it. There are always lilies somewhere in point 1 to *n*.
