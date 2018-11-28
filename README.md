@@ -40,7 +40,7 @@ Output:
 ```
 
 ##### Note  
-In the first example the from can reach home in two jumps: the first jump from the point 1 to the point 4 (the length of the jump is three), and the second jump from the point 4 to the point 8 (the length of the jump is four).
+In the first example the frog can reach home in two jumps: the first jump from the point 1 to the point 4 (the length of the jump is three), and the second jump from the point 4 to the point 8 (the length of the jump is four).
 
 In the second example the frog can not reach home, because to make it she need to jump on a distance three, but the maximum length of her jump equals to two.
 
@@ -93,5 +93,4 @@ Complexity: Worst Case: O(nd),
 *n* being the amount of string characters and *d* being the max distance of the frog's leap.
 
 #### Dynamic Programming Solution:  
-
-
+The dynamic programming way of this problem
