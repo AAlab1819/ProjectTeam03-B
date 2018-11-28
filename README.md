@@ -93,4 +93,14 @@ Complexity: Worst Case: O(nd),
 *n* being the amount of string characters and *d* being the max distance of the frog's leap.
 
 #### Dynamic Programming Solution:  
-The dynamic programming way of this problem
+The dynamic programming way of this problem is by storing where you will land in the last leap, by creating a small table about our current location in the leap, and keep counting how many we leap by array.
+
+```
+1 1 1 0 0 1 0 1
+0 ~ ~ ~ ~ ~ ~ ~
+0 1 ~ ~ ~ ~ ~ ~
+0 1 1 ~ ~ ~ ~ ~
+0 1 1 ~ ~ 2 ~ ~
+0 1 1 ~ ~ 2 ~ 3
+```
+For the first leap, we go through every possible step within the maximum leap, and storing it at the same time. Then we select the farthest *1*. From the farthest *1*, we'll do our first leap, written as 1 in the table above. After placing our position, we also count it as our amount of steps. After placing it, we start counting the steps for our next leap, and place our position in the farthest position while updating our amount of steps. Once we reach the end, the first for loop breaks and we print the amount of leaps we did in the string. If not, print -1.
