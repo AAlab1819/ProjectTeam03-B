@@ -104,3 +104,26 @@ The dynamic programming way of this problem is by storing where you will land in
 0 1 1 ~ ~ 2 ~ 3
 ```
 For the first leap, we go through every possible step within the maximum leap, and storing it at the same time. Then we select the farthest *1*. From the farthest *1*, we'll do our first leap, written as 1 in the table above. After placing our position, we also count it as our amount of steps. After placing it, we start counting the steps for our next leap, and place our position in the farthest position while updating our amount of steps. Once we reach the end, the first for loop breaks and we print the amount of leaps we did in the string. If not, print -1.
+
+Complexity: Worst Case: O(nd)
+
+### Comparison
+```     
+Greedy
+8 4 10010101 - 0 ms
+4 2 1001 - 0 ms
+10 9 1110000101 - 0 ms
+100 4 1111111111111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111 - 0 ms
+
+DP
+8 4 10010101 - 0 ms
+4 2 1001 - 0 ms
+10 9 1110000101 - 0 ms
+100 4 1111111111111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111 - 0 ms
+```
+Tested with omp_get_wtime, there are actually no noticable difference in both solutions. Using inputs from Codeforces, every result almost always yields 0 ms, occasionally 1 ms but more consistently 0 ms. 
+
+With Codeforces' submission details, the time and memory is rather inconsistent and random with multiple tries, so it is very hard to tell if the input is affecting it, as even the more complicated ones like in the fourth example above has no difference at all than the ones with first examples. 
+
+I also did not make a graph/chart as there is no point in making a graph where both data is flat on the ground.  
+Theoritically, the Greedy solution should be faster as it always checks the farthest lily pad first and jumps to it instantly, but the difference is miniscule it's not even worth considering. But the Greedy code is far easier to understand so there's that.
