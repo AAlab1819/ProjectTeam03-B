@@ -108,20 +108,43 @@ For the first leap, we go through every possible step within the maximum leap, a
 Complexity: Worst Case: O(nd)
 
 ### Comparison
-##### In Greedy
+#### In Greedy
+##### With constant *n* input
 ```     
-n    |            50000             |
-d    |   1 |  2  |  5  |  10  | 100 |
-time |  16 |  9  |  4  |   3  |  1  |
+n    |          5000000          |
+d    |  1 |  2  |  5  | 10 | 100 |
+time | 16 |  9  |  4  |  3 |  1  |
 ```
 ![](graph-pics/greedy-constantN.png)
+The higher the jump distance, the faster the frog can get to the end.
+###### With constant *d* input
 ```
 n    | 100 | 1000 | 1000000 | 10000000 | 1000000000 |
 d    |                 1                            |
 time |  0  |   1  |    4    |    33    |    322     |
 ```
 ![](graph-pics/greedy-constantD.png)
-### Analysis
+The longer the string size, the longer it takes to get to the end.
+#### In Dynamic Programming
+##### With constant *n* input
+```
+n    |        500000          |
+d    | 1 |  2 |  5 | 10 | 100 |
+time | 6 | 10 | 22 | 38 | 360 |
+```
+![](graph-pics/dp-constantN.png)
+##### With constant *d* input
+```
+n    | 10 | 1000 | 100000 | 500000 |
+d    |            1                |
+time | 1  |  2   |   3    |   6    |
+```
+![](graph-pics/dp-constantD.png)
+
+### Analysis 
+Our program has two input factors: the string size, and the maximum jump distance (*n* and *d*). These two can individually affect how fast the program runs. That is why I put two graphs showing how each input affects the process time.
+
+
 Tested with omp_get_wtime, there are actually no noticable difference in both solutions. Using inputs from Codeforces, every result almost always yields 0 ms, occasionally 1 ms but more consistently 0 ms. 
 
 With Codeforces' submission details, the time and memory is rather inconsistent and random with multiple tries, so it is very hard to tell if the input is affecting it, as even the more complicated ones like in the fourth example above has no difference at all than the ones with first examples. 
