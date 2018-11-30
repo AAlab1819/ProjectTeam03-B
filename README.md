@@ -118,7 +118,7 @@ time | 3 |  2  |  1  |  0 |  0  | (in ms)
 ![](graph-pics/greedy-constantNfixed1.png)  
 The higher the jump distance, the faster the frog can get to the end.
 
-I had to change the *n* to 500000 to make a fair comparison with DP. But the original 5000000 can still be seen [here.](https://raw.githubusercontent.com/AAlab1819/ProjectTeam03-B/master/graph-pics/greedy-constantNfixed.png)
+I had to change the *n* to 500000 to make a fair comparison with DP. But the original 5000000 (which has more noticable graph difference) can still be seen [here.](https://raw.githubusercontent.com/AAlab1819/ProjectTeam03-B/master/graph-pics/greedy-constantNfixed.png)
 ##### With constant *d* input
 ```
 n    | 100 | 1000 | 1000000 | 10000000 | 1000000000 |
