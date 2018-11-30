@@ -111,13 +111,15 @@ Complexity: Worst Case: O(nd)
 #### In Greedy
 ##### With constant *n* input
 ```     
-n    |          5000000          |
-d    |  1 |  2  |  5  | 10 | 100 |
-time | 23 | 11  |  7  |  3 |  1  | (in ms)
+n    |         500000           |
+d    | 1 |  2  |  5  | 10 | 100 |
+time | 3 |  2  |  1  |  0 |  0  | (in ms)
 ```
-![](graph-pics/greedy-constantNfixed.png)  
+![](graph-pics/greedy-constantNfixed1.png)  
 The higher the jump distance, the faster the frog can get to the end.
-###### With constant *d* input
+
+I had to change the *n* to 500000 to make a fair comparison with DP. But the original 5000000 can still be seen [here.](https://raw.githubusercontent.com/AAlab1819/ProjectTeam03-B/master/graph-pics/greedy-constantNfixed.png)
+##### With constant *d* input
 ```
 n    | 100 | 1000 | 1000000 | 10000000 | 1000000000 |
 d    |                 1                            |
@@ -133,26 +135,17 @@ d    | 1 |  2 |  5 | 10 | 100 |
 time | 6 | 10 | 22 | 38 | 360 | (in ms)
 ```
 ![](graph-pics/dp-constantN.png)  
-I had to change the string size to only 500000 because DP seemingly won't allow anything more than that. But thankfully we can still see the stark differences from Greedy.
-
-The program ran faster with *d* = 1 (6 ms compared to Greedy's 23 ms). But, that's the only thing it did better than Greedy. Greedy already raced past DP on *d* = 3 (DP did 22 ms compared to Greedy's 7 ms), and it goes way even more slower the more value *d* has. At *d* = 100, the program had to run in 360 ms, whereas Greedy takes only 1 ms. 
-
+The program ran slower than Greedy, and even more slower the higher max distance leap we input.
 Notice how the graph goes upwards instead of downwards in Greedy's section above.
 ##### With constant *d* input
 ```
-n    | 10 | 1000 | 100000 | 500000 |
-d    |            1                |
-time | 1  |  2   |   3    |   6    | (in ms)
+n    | 100 | 1000 | 100000 | 500000 |
+d    |             1                |
+time |  1  |  2   |   3    |   6    | (in ms)
 ```
 ![](graph-pics/dp-constantD.png)  
-Sadly we can't do a closer comparison on *d* input because of the program's limitations with DP.
+Sadly we can't do a closer comparison on *d* input because of the program's limitations with DP. But it can also be seen that it's slower than Greedy, though not by a wide margin.
 ### Analysis 
-Our program has two input factors: the string size, and the maximum jump distance (*n* and *d*). These two can individually affect how fast the program runs. That is why I put two graphs showing how each input affects the process time.
+Our program has two input factors: the string size, and the maximum jump distance (*n* and *d*, respectively). These two can individually affect how fast the program runs. That is why I put two graphs on each solution showing how each input affects the process time.
 
-
-Tested with omp_get_wtime, there are actually no noticable difference in both solutions. Using inputs from Codeforces, every result almost always yields 0 ms, occasionally 1 ms but more consistently 0 ms. 
-
-With Codeforces' submission details, the time and memory is rather inconsistent and random with multiple tries, so it is very hard to tell if the input is affecting it, as even the more complicated ones like in the fourth example above has no difference at all than the ones with first examples. 
-
-I also did not make a graph/chart as there is no point in making a graph where both data is flat on the ground.  
-Theoritically, the Greedy solution should be faster as it always checks the farthest lily pad first and jumps to it instantly, but the difference is miniscule it's not even worth considering. But the Greedy code is far easier to understand so there's that.
+Greedy easily won because of how quicker the program runs on almost any aspect. Then again, the differences cannot be seen unless we
