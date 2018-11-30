@@ -113,7 +113,7 @@ Complexity: Worst Case: O(nd)
 ```     
 n    |          5000000          |
 d    |  1 |  2  |  5  | 10 | 100 |
-time | 16 |  9  |  4  |  3 |  1  |
+time | 23 | 11  |  7  |  3 |  1  | (in ms)
 ```
 ![](graph-pics/greedy-constantN.png)  
 The higher the jump distance, the faster the frog can get to the end.
@@ -121,7 +121,7 @@ The higher the jump distance, the faster the frog can get to the end.
 ```
 n    | 100 | 1000 | 1000000 | 10000000 | 1000000000 |
 d    |                 1                            |
-time |  0  |   1  |    4    |    33    |    322     |
+time |  0  |   1  |    4    |    33    |    322     | (in ms)
 ```
 ![](graph-pics/greedy-constantD.png)  
 The longer the string size, the longer it takes to get to the end.
@@ -130,17 +130,22 @@ The longer the string size, the longer it takes to get to the end.
 ```
 n    |        500000          |
 d    | 1 |  2 |  5 | 10 | 100 |
-time | 6 | 10 | 22 | 38 | 360 |
+time | 6 | 10 | 22 | 38 | 360 | (in ms)
 ```
 ![](graph-pics/dp-constantN.png)  
+I had to change the string size to only 500000 because DP seemingly won't allow anything more than that. But thankfully we can still see the stark differences from Greedy.
+
+The program ran faster with *d* = 1 (6 ms compared to Greedy's 16 ms). But, that's the only thing it did better than Greedy. Greedy already ran faster on *d* = 2 (DP did 10 ms compared to Greedy's 9 ms), and it goes way even more slower the more value *d* has. At *d* = 100, the program had to run in 360 ms, whereas Greedy takes only 1 ms. 
+
+Notice how the graph goes upwards instead of downwards in Greedy's section above.
 ##### With constant *d* input
 ```
 n    | 10 | 1000 | 100000 | 500000 |
 d    |            1                |
-time | 1  |  2   |   3    |   6    |
+time | 1  |  2   |   3    |   6    | (in ms)
 ```
 ![](graph-pics/dp-constantD.png)  
-
+Sadly we can't do a closer comparison on *d* input because of the program's limitations with DP.
 ### Analysis 
 Our program has two input factors: the string size, and the maximum jump distance (*n* and *d*). These two can individually affect how fast the program runs. That is why I put two graphs showing how each input affects the process time.
 
