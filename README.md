@@ -146,7 +146,9 @@ time |  1  |  2   |   3    |   6    | (in ms)
 ![](graph-pics/dp-constantD.png)  
 Sadly we can't do a closer comparison on *d* input because of the program's limitations with DP. But it can also be seen that it's slower than Greedy, though not by a wide margin.
 ### Analysis 
-![](graph-pics/constantN-GreedyvDP.png) 
+###### Picture comparison of Greedy vs DP with constant *n*
+![](graph-pics/constantN-GreedyvDP.png)
+
 Our program has two input factors: the string size, and the maximum jump distance (*n* and *d*, respectively). These two can individually affect how fast the program runs. That is why I put two graphs on each solution showing how each input affects the process time.
 
-Greedy easily won because of how quicker the program runs on almost any aspect. Then again, the differences cannot be seen unless we
+Greedy easily won because of how quicker the program runs on almost any aspect. Then again, the differences aren't noticable unless we go millions with the inputs, which is 10000x of the original test cases on Codeforces.
