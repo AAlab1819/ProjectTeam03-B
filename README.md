@@ -135,6 +135,8 @@ d    | 1 |  2 |  5 | 10 | 100 |
 time | 6 | 10 | 22 | 38 | 360 | (in ms)
 ```
 ![](graph-pics/dp-constantN.png)  
+Before, we used 5000000 as the constant *n*, but for some reason the DP program won't run with *n* more than 500000. So we had to change Greedy's *n* constant as well to make the comparison possible side by side. 
+
 The program ran slower than Greedy, and even more slower the higher max distance leap we input.
 Notice how the graph goes upwards instead of downwards in Greedy's section above.
 ##### With constant *d* input
