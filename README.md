@@ -108,19 +108,14 @@ For the first leap, we go through every possible step within the maximum leap, a
 Complexity: Worst Case: O(nd)
 
 ### Comparison
+##### In Greedy
 ```     
-Greedy
-8 4 10010101 - 0 ms
-4 2 1001 - 0 ms
-10 9 1110000101 - 0 ms
-100 4 1111111111111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111 - 0 ms
-
-DP
-8 4 10010101 - 0 ms
-4 2 1001 - 0 ms
-10 9 1110000101 - 0 ms
-100 4 1111111111111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111 - 0 ms
+n    |            50000             |
+d    |   1 |  2  |  5  |  10  | 100 |
+time |  16 |  9  |  4  |   3  |  1  |
 ```
+[](graph-pics/greedyconstantN)
+### Analysis
 Tested with omp_get_wtime, there are actually no noticable difference in both solutions. Using inputs from Codeforces, every result almost always yields 0 ms, occasionally 1 ms but more consistently 0 ms. 
 
 With Codeforces' submission details, the time and memory is rather inconsistent and random with multiple tries, so it is very hard to tell if the input is affecting it, as even the more complicated ones like in the fourth example above has no difference at all than the ones with first examples. 
