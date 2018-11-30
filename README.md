@@ -107,7 +107,7 @@ For the first leap, we go through every possible step within the maximum leap, a
 
 Complexity: Worst Case: O(nd)
 
-### Comparison
+### Comparison / Analysis
 #### In Greedy
 ##### With constant *n* input
 ```     
@@ -147,7 +147,7 @@ time |  1  |  2   |   3    |   6    | (in ms)
 ```
 ![](graph-pics/dp-constantD.png)  
 Sadly we can't do a closer comparison on *d* input because of the program's limitations with DP. But it can also be seen that it's slower than Greedy, though not by a wide margin.
-### Analysis 
+### Conclusion
 ###### Picture comparison of Greedy vs DP with constant *n*
 ![](graph-pics/constantN-GreedyvDP.png)
 
