@@ -114,7 +114,7 @@ n    |            50000             |
 d    |   1 |  2  |  5  |  10  | 100 |
 time |  16 |  9  |  4  |   3  |  1  |
 ```
-[](graph-pics/greedyconstantN)
+[](graph-pics/greedyconstantN.png)
 ### Analysis
 Tested with omp_get_wtime, there are actually no noticable difference in both solutions. Using inputs from Codeforces, every result almost always yields 0 ms, occasionally 1 ms but more consistently 0 ms. 
 
